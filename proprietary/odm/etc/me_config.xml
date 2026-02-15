@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- MIUI ADD: Modem_ModemEnhance -->
+<MESubFeatureConfig>
+    <!--global -->
+    <!-- device_name = ro.product.device -->
+    <deviceConfig device_name="warm">
+        <!-- hwc_name = ro.product.mod_device -->
+        <hwc hwc_name="GL" />
+        <!-- feature_id refer to MEFeatureConfig.MEFEATURE_TYPE_ID_XXX -->
+        <feature feature_id="1" hw_support="0" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+        <feature feature_id="17" hw_support="0" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+    </deviceConfig>
+    <!--cn -->
+    <!-- device_name = ro.product.device -->
+    <deviceConfig device_name="warm">
+        <!-- hwc_name = ro.product.mod_device -->
+        <hwc hwc_name="CN" />
+        <!-- feature_id refer to MEFeatureConfig.MEFEATURE_TYPE_ID_XXX -->
+        <feature feature_id="1" hw_support="0" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+        <feature feature_id="2" hw_support="1" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+        <feature feature_id="3" hw_support="1" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+        <feature feature_id="4" hw_support="1" sw_version="1" sw_enable="0" sw_mp_enable="1"/>
+        <feature feature_id="5" hw_support="0" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+        <feature feature_id="6" hw_support="0" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+        <feature feature_id="7" hw_support="1" sw_version="1" sw_enable="1" sw_mp_enable="1"/>
+        <feature feature_id="8" hw_support="1" sw_version="1" sw_enable="1" sw_mp_enable="1"/>
+        <feature feature_id="9" hw_support="1" sw_version="1" sw_enable="1" sw_mp_enable="1"/>
+        <feature feature_id="10" hw_support="1" sw_version="1" sw_enable="1" sw_mp_enable="1"/>
+        <feature feature_id="11" hw_support="0" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+        <feature feature_id="12" hw_support="0" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+        <feature feature_id="13" hw_support="0" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+        <feature feature_id="14" hw_support="1" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+        <feature feature_id="15" hw_support="1" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+        <feature feature_id="16" hw_support="1" sw_version="1" sw_enable="0" sw_mp_enable="1"/>
+        <feature feature_id="17" hw_support="1" sw_version="1" sw_enable="0" sw_mp_enable="1"/>
+        <feature feature_id="18" hw_support="1" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+        <feature feature_id="19" hw_support="1" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+        <feature feature_id="20" hw_support="1" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+        <feature feature_id="21" hw_support="1" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+        <!--bitMask 0x31f==799 -->
+        <GestureModeMapConfigBitMask bitMask="799" />
+        <GestureModeMapConfig>
+            <GestureModeMapItem usb="0"  flip="2" receiver="255" voice="255"  gestureState="255" orientState="255"  distanceState="255"  interferenceState="255"   gameState="255"    whiteState="255"    outMode="0" outMode1="0" />
+            <GestureModeMapItem usb="0"  flip="1" receiver="255" voice="255"  gestureState="34" orientState="255"  distanceState="255"  interferenceState="255"   gameState="1"    whiteState="255"    outMode="1" outMode1="0" />
+            <GestureModeMapItem usb="0"  flip="1" receiver="255" voice="255"  gestureState="30" orientState="255"  distanceState="255"  interferenceState="255"   gameState="1"    whiteState="255"    outMode="1" outMode1="0" />
+            <GestureModeMapItem usb="0"  flip="1" receiver="255" voice="255"  gestureState="36" orientState="255"  distanceState="255"  interferenceState="255"   gameState="1"    whiteState="255"    outMode="1" outMode1="0" />
+            <GestureModeMapItem usb="0"  flip="1" receiver="255" voice="255"  gestureState="16" orientState="255"  distanceState="255"  interferenceState="255"   gameState="255"    whiteState="255"    outMode="1" outMode1="0" />
+            <GestureModeMapItem usb="0"  flip="1" receiver="255" voice="255"  gestureState="17" orientState="255"  distanceState="255"  interferenceState="255"   gameState="255"    whiteState="255"    outMode="1" outMode1="0" />
+            <GestureModeMapItem usb="0"  flip="1" receiver="255" voice="255"  gestureState="18" orientState="255"  distanceState="255"  interferenceState="255"   gameState="255"    whiteState="255"    outMode="1" outMode1="0" />
+            <GestureModeMapItem usb="0"  flip="1" receiver="1" voice="1"  gestureState="19" orientState="255"  distanceState="1"  interferenceState="255"   gameState="255"    whiteState="255"    outMode="3" outMode1="0" />
+            <GestureModeMapItem usb="0"  flip="1" receiver="1" voice="1"  gestureState="20" orientState="255"  distanceState="1"  interferenceState="255"   gameState="255"    whiteState="255"    outMode="3" outMode1="0" />
+            <GestureModeMapItem usb="0"  flip="1" receiver="1" voice="1"  gestureState="22" orientState="255"  distanceState="1"  interferenceState="255"   gameState="255"    whiteState="255"    outMode="3" outMode1="0" />
+            <GestureModeMapItem usb="0"  flip="0" receiver="255" voice="255"  gestureState="4" orientState="255"  distanceState="255"  interferenceState="255"   gameState="255"    whiteState="255"    outMode="3" outMode1="0" />
+            <GestureModeMapItem usb="0"  flip="0" receiver="1" voice="1"  gestureState="4" orientState="255"  distanceState="1"  interferenceState="255"   gameState="255"    whiteState="255"    outMode="3" outMode1="0" />
+            <GestureModeMapItem usb="1"  flip="2" receiver="255" voice="255"  gestureState="255" orientState="255"  distanceState="255"  interferenceState="255"   gameState="255"    whiteState="255"    outMode="0" outMode1="0" />
+            <GestureModeMapItem usb="1"  flip="1" receiver="255" voice="255"  gestureState="34" orientState="255"  distanceState="255"  interferenceState="255"   gameState="1"    whiteState="255"    outMode="1" outMode1="0" />
+            <GestureModeMapItem usb="1"  flip="1" receiver="255" voice="255"  gestureState="30" orientState="255"  distanceState="255"  interferenceState="255"   gameState="1"    whiteState="255"    outMode="1" outMode1="0" />
+            <GestureModeMapItem usb="1"  flip="1" receiver="255" voice="255"  gestureState="36" orientState="255"  distanceState="255"  interferenceState="255"   gameState="1"    whiteState="255"    outMode="1" outMode1="0" />
+            <GestureModeMapItem usb="1"  flip="1" receiver="255" voice="255"  gestureState="16" orientState="255"  distanceState="255"  interferenceState="255"   gameState="255"    whiteState="255"    outMode="1" outMode1="0" />
+            <GestureModeMapItem usb="1"  flip="1" receiver="255" voice="255"  gestureState="17" orientState="255"  distanceState="255"  interferenceState="255"   gameState="255"    whiteState="255"    outMode="1" outMode1="0" />
+            <GestureModeMapItem usb="1"  flip="1" receiver="255" voice="255"  gestureState="18" orientState="255"  distanceState="255"  interferenceState="255"   gameState="255"    whiteState="255"    outMode="1" outMode1="0" />
+            <GestureModeMapItem usb="1"  flip="1" receiver="1" voice="1"  gestureState="19" orientState="255"  distanceState="1"  interferenceState="255"   gameState="255"    whiteState="255"    outMode="3" outMode1="0" />
+            <GestureModeMapItem usb="1"  flip="1" receiver="1" voice="1"  gestureState="20" orientState="255"  distanceState="1"  interferenceState="255"   gameState="255"    whiteState="255"    outMode="3" outMode1="0" />
+            <GestureModeMapItem usb="1"  flip="1" receiver="1" voice="1"  gestureState="22" orientState="255"  distanceState="1"  interferenceState="255"   gameState="255"    whiteState="255"    outMode="3" outMode1="0" />
+            <GestureModeMapItem usb="1"  flip="0" receiver="255" voice="255"  gestureState="4" orientState="255"  distanceState="255"  interferenceState="255"   gameState="255"    whiteState="255"    outMode="3" outMode1="0" />
+            <GestureModeMapItem usb="1"  flip="0" receiver="1" voice="1"  gestureState="4" orientState="255"  distanceState="1"  interferenceState="255"   gameState="255"    whiteState="255"    outMode="3" outMode1="0" />
+        </GestureModeMapConfig>
+    </deviceConfig>
+    <!--default -->
+    <!-- device_name = ro.product.device -->
+    <deviceConfig device_name="warm">
+        <!-- hwc_name = ro.product.mod_device -->
+        <hwc hwc_name="default" />
+        <!-- feature_id refer to MEFeatureConfig.MEFEATURE_TYPE_ID_XXX -->
+        <feature feature_id="1" hw_support="0"  sw_enable="0" sw_mp_enable="0"/>
+        <feature feature_id="17" hw_support="0"  sw_enable="0" sw_mp_enable="0"/>
+    </deviceConfig>
+</MESubFeatureConfig>
+<!-- END Modem_ModemEnhance -->

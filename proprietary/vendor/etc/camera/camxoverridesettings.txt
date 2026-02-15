@@ -1,0 +1,23 @@
+# Add custom property
+multiCameraEnable=TRUE
+dynamicFpsSupported=0@30|1@30|2@30|3@30
+disableFocusIndication=TRUE
+numPCRsBeforeStreamOn=1
+halBufferMgrMode=0
+raiserecoverysigabrt=FALSE
+
+# flush time
+nodeResponseTime=200
+sessionResponseTimePadding=300
+sessionMaxFlushWaitTime=1000
+
+overrideLogLevels=0x1
+logInfoMask=0x0
+logWarningMask=0
+logCoreCfgMask=0x10098
+logRequestMapping=FALSE
+enableAsciiLogging=0
+enableTxtLogging=0
+offlineLoggerEnableBackupLog=FALSE
+enableCameraCoreDumpBinary=FALSE
+enableCameraCoreDumpText=FALSE

@@ -1,0 +1,102 @@
+{
+  "config":{
+    "hw_platform": ["MTP", "Surf", "RCM", "IDP"],
+    "soc_id": ["623"]
+  },
+  "mmc56x3x_0_platform":{
+    "owner": "sns_mmc56x3x",
+    ".mag":{
+      "owner": "sns_mmc56x3x",
+      ".fac_cal":{
+        "owner": "sns_mmc56x3x",
+        ".corr_mat":{
+          "owner": "sns_mmc56x3x",
+          "0_0":{ "type": "flt", "ver": "0",
+            "data": "0.9875"
+          },
+          "0_1":{ "type": "flt", "ver": "0",
+            "data": "-0.0284"
+          },
+          "0_2":{ "type": "flt", "ver": "0",
+            "data": "0.0107"
+          },
+          "1_0":{ "type": "flt", "ver": "0",
+            "data": "-0.0284"
+          },
+          "1_1":{ "type": "flt", "ver": "0",
+            "data": "0.9961"
+          },
+          "1_2":{ "type": "flt", "ver": "0",
+            "data": "-0.0009"
+          },
+          "2_0":{ "type": "flt", "ver": "0",
+            "data": "0.0107"
+          },
+          "2_1":{ "type": "flt", "ver": "0",
+            "data": "-0.0009"
+          },
+          "2_2":{ "type": "flt", "ver": "0",
+            "data": "1.0164"
+          }
+        },
+        ".bias":{
+          "owner": "sns_mmc56x3x",
+          "x":{ "type": "flt", "ver": "0",
+            "data": "0.0"
+          },
+          "y":{ "type": "flt", "ver": "0",
+            "data": "0.0"
+          },
+          "z":{ "type": "flt", "ver": "0",
+            "data": "0.0"
+          }
+        }
+      },
+	  ".fac_cal_2":{
+        "owner": "sns_mmc56x3x",
+        ".corr_mat":{
+          "owner": "sns_mmc56x3x",
+          "0_0":{ "type": "flt", "ver": "0",
+            "data": "0.9875"
+          },
+          "0_1":{ "type": "flt", "ver": "0",
+            "data": "-0.0284"
+          },
+          "0_2":{ "type": "flt", "ver": "0",
+            "data": "0.0107"
+          },
+          "1_0":{ "type": "flt", "ver": "0",
+            "data": "-0.0284"
+          },
+          "1_1":{ "type": "flt", "ver": "0",
+            "data": "0.9961"
+          },
+          "1_2":{ "type": "flt", "ver": "0",
+            "data": "-0.0009"
+          },
+          "2_0":{ "type": "flt", "ver": "0",
+            "data": "0.0107"
+          },
+          "2_1":{ "type": "flt", "ver": "0",
+            "data": "-0.0009"
+          },
+          "2_2":{ "type": "flt", "ver": "0",
+            "data": "1.0164"
+          }
+        },
+        ".bias":{
+          "owner": "sns_mmc56x3x",
+          "x":{ "type": "flt", "ver": "0",
+            "data": "0.0"
+          },
+          "y":{ "type": "flt", "ver": "0",
+            "data": "0.0"
+          },
+          "z":{ "type": "flt", "ver": "0",
+            "data": "0.0"
+          }
+        }
+      }
+    }
+  }
+}
