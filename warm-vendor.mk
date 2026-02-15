@@ -6,10 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/warm
 
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/warm/proprietary/odm/etc/audio_policy_engine_configuration_mi.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_policy_engine_configuration_mi.xml \
-    vendor/xiaomi/warm/proprietary/odm/etc/audio_policy_engine_default_stream_volumes.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_policy_engine_default_stream_volumes.xml \
-    vendor/xiaomi/warm/proprietary/odm/etc/audio_policy_engine_product_strategies.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_policy_engine_product_strategies.xml \
-    vendor/xiaomi/warm/proprietary/odm/etc/audio_policy_engine_stream_volumes.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_policy_engine_stream_volumes.xml \
     vendor/xiaomi/warm/proprietary/odm/etc/camera/cameraopt.json:$(TARGET_COPY_OUT_ODM)/etc/camera/cameraopt.json \
     vendor/xiaomi/warm/proprietary/odm/etc/df_default.xml:$(TARGET_COPY_OUT_ODM)/etc/df_default.xml \
     vendor/xiaomi/warm/proprietary/odm/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/cct_pcc.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_panel_c3f2_35_02_0d_hd_video/cct_pcc.txt \
@@ -191,7 +187,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/warm/proprietary/product/etc/permissions/UimService.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimService.xml \
     vendor/xiaomi/warm/proprietary/product/etc/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml \
     vendor/xiaomi/warm/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
-    vendor/xiaomi/warm/proprietary/system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc \
+    vendor/xiaomi/warm/proprietary/system_ext/etc/init/vendor.qti.qccsyshal_aidl-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.qti.qccsyshal_aidl-service.rc \
     vendor/xiaomi/warm/proprietary/system_ext/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/wfdservice.rc \
     vendor/xiaomi/warm/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/xiaomi/warm/proprietary/system_ext/etc/permissions/com.qti.qcc.vendor_qcc.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.qcc.vendor_qcc.xml \
@@ -204,7 +200,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/warm/proprietary/system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_telephony_system_packages_config.xml \
     vendor/xiaomi/warm/proprietary/system_ext/etc/sysconfig/qti_whitelist_system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_whitelist_system_ext.xml \
     vendor/xiaomi/warm/proprietary/system_ext/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wfdconfigsink.xml \
-    vendor/xiaomi/warm/proprietary/vendor/etc/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
     vendor/xiaomi/warm/proprietary/vendor/etc/acdbdata/IDP_UPD/IDP_UPD_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP_UPD/IDP_UPD_acdb_cal.acdb \
     vendor/xiaomi/warm/proprietary/vendor/etc/acdbdata/IDP_UPD/IDP_UPD_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP_UPD/IDP_UPD_workspaceFileXml.qwsp \
     vendor/xiaomi/warm/proprietary/vendor/etc/acdbdata/ffv_models/ffv__5.0.1_0.1__3.0.0_0.0__eai_2.10_enpu3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/ffv_models/ffv__5.0.1_0.1__3.0.0_0.0__eai_2.10_enpu3.pmd \
@@ -252,21 +247,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/warm/proprietary/vendor/etc/acdbdata/pitti_qrd/QRD_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/pitti_qrd/QRD_acdb_cal.acdb \
     vendor/xiaomi/warm/proprietary/vendor/etc/acdbdata/pitti_qrd/QRD_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/pitti_qrd/QRD_workspaceFileXml.qwsp \
     vendor/xiaomi/warm/proprietary/vendor/etc/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
-    vendor/xiaomi/warm/proprietary/vendor/etc/audio/sku_pitti/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_pitti/audio_effects.conf \
     vendor/xiaomi/warm/proprietary/vendor/etc/audio/sku_pitti/mixer_paths_pitti_idp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_pitti/mixer_paths_pitti_idp.xml \
     vendor/xiaomi/warm/proprietary/vendor/etc/audio/sku_pitti/mixer_paths_pitti_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_pitti/mixer_paths_pitti_qrd.xml \
     vendor/xiaomi/warm/proprietary/vendor/etc/audio/sku_pitti/resourcemanager_pitti_idp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_pitti/resourcemanager_pitti_idp.xml \
     vendor/xiaomi/warm/proprietary/vendor/etc/audio/sku_pitti/resourcemanager_pitti_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_pitti/resourcemanager_pitti_qrd.xml \
-    vendor/xiaomi/warm/proprietary/vendor/etc/audio/sku_pitti_qssi/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_pitti_qssi/audio_policy_configuration.xml \
     vendor/xiaomi/warm/proprietary/vendor/etc/audio_diag.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/audio_diag.cfg \
-    vendor/xiaomi/warm/proprietary/vendor/etc/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
-    vendor/xiaomi/warm/proprietary/vendor/etc/audio_policy_engine_configuration_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_configuration_mi.xml \
-    vendor/xiaomi/warm/proprietary/vendor/etc/audio_policy_engine_default_stream_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_default_stream_volumes.xml \
-    vendor/xiaomi/warm/proprietary/vendor/etc/audio_policy_engine_product_strategies.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_product_strategies.xml \
-    vendor/xiaomi/warm/proprietary/vendor/etc/audio_policy_engine_stream_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_stream_volumes.xml \
     vendor/xiaomi/warm/proprietary/vendor/etc/batching.conf:$(TARGET_COPY_OUT_VENDOR)/etc/batching.conf \
-    vendor/xiaomi/warm/proprietary/vendor/etc/bluetooth_qti_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_qti_audio_policy_configuration.xml \
-    vendor/xiaomi/warm/proprietary/vendor/etc/bluetooth_qti_hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_qti_hearing_aid_audio_policy_configuration.xml \
     vendor/xiaomi/warm/proprietary/vendor/etc/camera/102_SummerDay.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/102_SummerDay.png \
     vendor/xiaomi/warm/proprietary/vendor/etc/camera/103_Fantasy.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/103_Fantasy.png \
     vendor/xiaomi/warm/proprietary/vendor/etc/camera/104_Meet.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/104_Meet.png \
@@ -555,7 +541,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/warm/proprietary/vendor/etc/camera/xiaomi/thirdpartysnapshot.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/thirdpartysnapshot.json \
     vendor/xiaomi/warm/proprietary/vendor/etc/camera/xiaomi/uwsuperlowlightshot.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/uwsuperlowlightshot.json \
     vendor/xiaomi/warm/proprietary/vendor/etc/camera/xiaomiSceneDetection.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomiSceneDetection.xml \
-    vendor/xiaomi/warm/proprietary/vendor/etc/card-defs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/card-defs.xml \
     vendor/xiaomi/warm/proprietary/vendor/etc/charger_fw_fstab.qti:$(TARGET_COPY_OUT_VENDOR)/etc/charger_fw_fstab.qti \
     vendor/xiaomi/warm/proprietary/vendor/etc/clstc_config_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/clstc_config_library.xml \
     vendor/xiaomi/warm/proprietary/vendor/etc/cne/mwqem.conf:$(TARGET_COPY_OUT_VENDOR)/etc/cne/mwqem.conf \
@@ -631,14 +616,16 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/warm/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
     vendor/xiaomi/warm/proprietary/vendor/etc/init/dataqti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataqti.rc \
     vendor/xiaomi/warm/proprietary/vendor/etc/init/dpmQmiMgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dpmQmiMgr.rc \
-    vendor/xiaomi/warm/proprietary/vendor/etc/init/fingerprint-odm.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fingerprint-odm.rc \
+    vendor/xiaomi/warm/proprietary/vendor/etc/init/hw/init.qcom.factory.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.qcom.factory.rc \
     vendor/xiaomi/warm/proprietary/vendor/etc/init/hw/init.qti.kernel.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.qti.kernel.rc \
+    vendor/xiaomi/warm/proprietary/vendor/etc/init/hw/init.qti.ufs.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.qti.ufs.rc \
     vendor/xiaomi/warm/proprietary/vendor/etc/init/ims-dataservice-daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims-dataservice-daemon.rc \
     vendor/xiaomi/warm/proprietary/vendor/etc/init/ims_rtp_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims_rtp_daemon.rc \
     vendor/xiaomi/warm/proprietary/vendor/etc/init/imsdaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsdaemon.rc \
     vendor/xiaomi/warm/proprietary/vendor/etc/init/init.mi_thermald.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.mi_thermald.rc \
     vendor/xiaomi/warm/proprietary/vendor/etc/init/init.qccvendor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qccvendor.rc \
     vendor/xiaomi/warm/proprietary/vendor/etc/init/init.qti.media.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.media.rc \
+    vendor/xiaomi/warm/proprietary/vendor/etc/init/init.qti.qcv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.qcv.rc \
     vendor/xiaomi/warm/proprietary/vendor/etc/init/init.time_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.time_daemon.rc \
     vendor/xiaomi/warm/proprietary/vendor/etc/init/init.vendor.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.sensors.rc \
     vendor/xiaomi/warm/proprietary/vendor/etc/init/init.vendor.wlan.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.wlan.rc \
@@ -703,7 +690,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/warm/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
     vendor/xiaomi/warm/proprietary/vendor/etc/media_profiles_pitti.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_pitti.xml \
     vendor/xiaomi/warm/proprietary/vendor/etc/media_profiles_pitti_32go.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_pitti_32go.xml \
-    vendor/xiaomi/warm/proprietary/vendor/etc/microphone_characteristics.xml:$(TARGET_COPY_OUT_VENDOR)/etc/microphone_characteristics.xml \
     vendor/xiaomi/warm/proprietary/vendor/etc/models/acd/environment.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/environment.eai \
     vendor/xiaomi/warm/proprietary/vendor/etc/models/acd/event.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/event.eai \
     vendor/xiaomi/warm/proprietary/vendor/etc/models/acd/music.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/music.eai \
@@ -720,10 +706,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/warm/proprietary/vendor/etc/perf/testcommonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/testcommonresourceconfigs.xml \
     vendor/xiaomi/warm/proprietary/vendor/etc/perf/testtargetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/testtargetresourceconfigs.xml \
     vendor/xiaomi/warm/proprietary/vendor/etc/perf/thermalboost.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/thermalboost.conf \
+    vendor/xiaomi/warm/proprietary/vendor/etc/permissions/android.hardware.hardware_keystore.km100.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.hardware_keystore.km100.xml \
     vendor/xiaomi/warm/proprietary/vendor/etc/permissions/noRil/apq_excluded_telephony_features.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/noRil/apq_excluded_telephony_features.xml \
     vendor/xiaomi/warm/proprietary/vendor/etc/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml \
     vendor/xiaomi/warm/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
-    vendor/xiaomi/warm/proprietary/vendor/etc/qcril_database/qcrilNr.db:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/qcrilNr.db \
     vendor/xiaomi/warm/proprietary/vendor/etc/qcril_database/upgrade/config/0006.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0006.0_config.sql \
     vendor/xiaomi/warm/proprietary/vendor/etc/qcril_database/upgrade/config/0007.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0007.0_config.sql \
     vendor/xiaomi/warm/proprietary/vendor/etc/qcril_database/upgrade/config/0013.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0013.0_config.sql \
@@ -863,12 +849,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/warm/proprietary/vendor/etc/thermal-video.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-video.conf \
     vendor/xiaomi/warm/proprietary/vendor/etc/thermal-videochat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-videochat.conf \
     vendor/xiaomi/warm/proprietary/vendor/etc/thermald-devices.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermald-devices.conf \
-    vendor/xiaomi/warm/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
     vendor/xiaomi/warm/proprietary/vendor/etc/usecaseKvManager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usecaseKvManager.xml \
     vendor/xiaomi/warm/proprietary/vendor/etc/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml \
-    vendor/xiaomi/warm/proprietary/vendor/etc/wifi/icm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/icm.conf \
     vendor/xiaomi/warm/proprietary/vendor/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
-    vendor/xiaomi/warm/proprietary/vendor/etc/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
     vendor/xiaomi/warm/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     vendor/xiaomi/warm/proprietary/vendor/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf \
     vendor/xiaomi/warm/proprietary/vendor/firmware/a610_zap.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/a610_zap.b00 \
@@ -916,7 +899,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/warm/proprietary/vendor/lib64/camera/com.qti.tuned.c3f2_shine_imx852_main_ii.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.c3f2_shine_imx852_main_ii.bin \
     vendor/xiaomi/warm/proprietary/vendor/lib64/camera/com.qti.tuned.c3f2_truly_s5kjns_main_i.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.c3f2_truly_s5kjns_main_i.bin \
     vendor/xiaomi/warm/proprietary/vendor/lib64/camera/com.qti.tuned.c3f2_truly_sc520cs_front_i.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.c3f2_truly_sc520cs_front_i.bin \
-    vendor/xiaomi/warm/proprietary/vendor/lib64/camera/com.qti.tuned.default.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.default.bin
+    vendor/xiaomi/warm/proprietary/vendor/lib64/camera/com.qti.tuned.default.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.default.bin \
+    vendor/xiaomi/warm/proprietary/vendor/lib64/cpufd_v1_0_0.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/cpufd_v1_0_0.bin \
+    vendor/xiaomi/warm/proprietary/vendor/lib64/libmctf_cl_program.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/libmctf_cl_program.bin
 
 PRODUCT_PACKAGES += \
     vendor.qti.diaghal-V1-ndk \
@@ -1048,15 +1033,15 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl-qti \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.bluetooth@1.1-impl-qti \
+    android.hardware.gnss-aidl-impl-qti \
     audio.bluetooth_qti.default \
-    audio.primary.pitti \
     camera.qcom \
     com.qti.chi.override \
     fingerprint.goodix.default \
     fingerprint.silead.default \
     gralloc.default \
+    libEseUtils \
     libqtigatekeeper \
-    sound_trigger.primary.pitti \
     vendor.qti.hardware.alarm-impl \
     vendor.qti.hardware.bluetooth_audio@2.0-impl \
     vendor.qti.hardware.bluetooth_audio@2.1-impl \
@@ -1085,6 +1070,7 @@ PRODUCT_PACKAGES += \
     libCB \
     libCneAppJni \
     libEvrcSwCodec \
+    libFaceUnlock \
     libFileMux_proprietary \
     libFlacSwDec \
     libGPMTEEC_vendor \
@@ -1109,22 +1095,13 @@ PRODUCT_PACKAGES += \
     libadreno_utils \
     libadsp_default_listener \
     libadsprpc \
-    libagm \
-    libagmmixer \
     libaidenoiser \
     libaidenoiserv2 \
     libanc_night \
     libanc_single_bokeh \
     libanc_single_bokeh_rear \
     libanc_single_rt_bokeh \
-    libar-acdb \
-    libar-gpr \
-    libar-gsl \
-    libar-pal \
-    libarmemlog \
-    libats \
     libaudio_log_utils \
-    libaudiofeaturestats \
     libbacklight-calib \
     libbase64 \
     libbatching \
@@ -1135,8 +1112,8 @@ PRODUCT_PACKAGES += \
     libbluetooth_audio_session_qti_2_1 \
     libbt-hidlclient \
     libbtnv \
+    libc++_shared \
     libcacertclient \
-    libcamera2ndk_vendor \
     libcamera_nn_stub \
     libcamera_scene \
     libcamerapostproc \
@@ -1168,9 +1145,9 @@ PRODUCT_PACKAGES += \
     libcneoplookup \
     libcneqmiutils \
     libcom.qti.chinodeutils \
+    libcom.xiaomi.pluginutils \
     libconfigdb \
     libcpion \
-    libcustomva_intf \
     libdataitems \
     libdfintf \
     libdiag \
@@ -1216,9 +1193,9 @@ PRODUCT_PACKAGES += \
     libgrallocutils \
     libgsl \
     libhdr_backlight_adapter \
+    libhdr_stub \
     libhdr_tm \
     libhistogram \
-    libhotword_intf \
     libidl \
     libintervmipc \
     libizat_client_api \
@@ -1260,11 +1237,10 @@ PRODUCT_PACKAGES += \
     liblowi_common \
     liblowi_wifihal \
     liblqe \
-    liblx-ar_util \
-    liblx-osal \
     libmapdata_api \
     libmasc \
     libmcs \
+    libmctfengine_stub \
     libmdmdetect \
     libmdsprpc \
     libmemutils \
@@ -1311,7 +1287,6 @@ PRODUCT_PACKAGES += \
     libops \
     libos \
     libpal_net_if \
-    libpalclient \
     libpdmapper \
     libpdnotifier \
     libperfconfig \
@@ -1399,7 +1374,6 @@ PRODUCT_PACKAGES += \
     libqti-qesdk-secure \
     libqti-util \
     libqti-utils \
-    libqti_vndfwk_detect \
     libqtigefar \
     libqtikeymaster4 \
     libqtikeymint \
@@ -1469,7 +1443,6 @@ PRODUCT_PACKAGES += \
     libvideoutils \
     libvmfilexfer \
     libvmmem \
-    libvui_intf \
     libwfdcodecv4l2_proprietary \
     libwfdcommonutils_proprietary \
     libwfdconfigutils_proprietary \
@@ -1525,7 +1498,6 @@ PRODUCT_PACKAGES += \
     sensors.qsh \
     sensors.touch.detect \
     libasphere \
-    libmisoundfx \
     libquasar \
     vendor.display.color@1.0 \
     vendor.display.color@1.1 \
@@ -1548,16 +1520,12 @@ PRODUCT_PACKAGES += \
     vendor.qti.diaghal@1.0_vendor \
     vendor.qti.gnss-V6-ndk \
     vendor.qti.gnss-service \
-    vendor.qti.hardware.AGMIPC@1.0-impl \
-    vendor.qti.hardware.ListenSoundModel@1.0-impl \
-    vendor.qti.hardware.ListenSoundModel@1.0 \
     vendor.qti.hardware.alarm-V1-ndk \
     vendor.qti.hardware.bluetooth_sar@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.1 \
     vendor.qti.hardware.bttpi-V3-ndk \
     vendor.qti.hardware.cacert@1.0 \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
-    vendor.qti.hardware.camera.postproc@1.0 \
     vendor.qti.hardware.data.cneaidlservice.internal.api-V1-ndk \
     vendor.qti.hardware.data.cneaidlservice.internal.constants-V1-ndk \
     vendor.qti.hardware.data.cneaidlservice.internal.server-V1-ndk \
@@ -1586,7 +1554,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.fm@1.0 \
     vendor.qti.hardware.mwqemadapter@1.0 \
     vendor.qti.hardware.mwqemadapteraidlservice-V1-ndk \
-    vendor.qti.hardware.pal@1.0-impl \
     vendor.qti.hardware.perf2-V1-ndk \
     vendor.qti.hardware.qccsyshal@1.0_vendor \
     vendor.qti.hardware.qccsyshal@1.1_vendor \
@@ -1642,7 +1609,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.sigma_miracast@1.0 \
     vendor.qti.hardware.slmadapter@1.0 \
     vendor.qti.hardware.soter-V1-ndk \
-    vendor.qti.hardware.systemhelper@1.0 \
     vendor.qti.hardware.trustedui-V1-ndk \
     vendor.qti.hardware.vpp@1.1 \
     vendor.qti.hardware.vpp@1.2 \
@@ -1670,6 +1636,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.latency@2.2 \
     vendor.qti.latencyaidlservice-V1-ndk \
     vendor.qti.memory.pasrmanager-V1-ndk \
+    vendor.qti.memory.pasrmanager@1.0 \
+    vendor.qti.memory.pasrmanager@1.1 \
     vendor.qti.qccvndhal_aidl-V1-ndk_vendor \
     vendor.qti.qccvndhal_aidl-halimpl \
     vendor.qti.qesdhal@1.0 \
@@ -1714,7 +1682,6 @@ PRODUCT_PACKAGES += \
     libmmrtpencoder \
     libqcc \
     libqcc_file_agent_sys \
-    libqccdme \
     libqccfileservice \
     libqesdk_ndk_platform.qti \
     libwfdavenhancements \
@@ -1738,7 +1705,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.diaghal@1.0 \
     vendor.qti.hardware.qccsyshal@1.0 \
     vendor.qti.hardware.qccsyshal@1.1 \
-    vendor.qti.hardware.qccsyshal@1.2-halimpl \
     vendor.qti.hardware.qccsyshal@1.2 \
     vendor.qti.hardware.qccvndhal@1.0 \
     vendor.qti.hardware.seccam@1.0 \
@@ -1747,7 +1713,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.imsrtpservice@3.0 \
     vendor.qti.imsrtpservice@3.1 \
     vendor.qti.qccsyshal_aidl-V1-ndk \
+    vendor.qti.qccsyshal_aidl-halimpl \
     vendor.qti.qccvndhal_aidl-V1-ndk \
+    vendor.qti.qesdhalaidl-V2-ndk \
+    vendor.xiaomi.hardware.display.mihwcextension-V1-ndk \
     displayfeature.default \
     libMiDispDevManager \
     libadaptivehdr \
@@ -1830,7 +1799,6 @@ PRODUCT_PACKAGES += \
     datafactoryservice-saidl.xml \
     deviceinfo-saidl.xml \
     dpm-saidl.xml \
-    fingerprint-odm.xml \
     imsdcservice-saidl.xml \
     mwqem-saidl.xml \
     qcrilhook-saidl.xml \
@@ -1861,6 +1829,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.qccvndhal_aidl-service.xml \
     vendor.qti.qspmhal-service.xml \
     vendor.xiaomi.hardware.displayfeature_aidl-service.xml \
+    vendor.qti.qccsyshal_aidl-service.xml \
     vendor.qti.qesdsys.service.xml \
     manifest_vendor.xiaomi.hardware.mlipay.xml \
     ATFWD-daemon \
@@ -1874,10 +1843,10 @@ PRODUCT_PACKAGES += \
     dspservice \
     edgnss-daemon \
     engine-service \
-    android.hardware.biometrics.fingerprint-service.odm \
     android.hardware.bluetooth@1.1-service-qti \
     android.hardware.gatekeeper-service-qti \
     android.hardware.gnss-aidl-service-qti \
+    android.hardware.keymaster@4.0-service-qti \
     android.hardware.security.keymint-service-qti \
     qconfigservice \
     qcrilNrd \
@@ -1898,8 +1867,21 @@ PRODUCT_PACKAGES += \
     ims-dataservice-daemon \
     ims_rtp_daemon \
     imsdaemon \
+    init.crda \
+    init.mdm \
+    init.qcom.class_core \
+    init.qcom.coex \
+    init.qcom.efs.sync \
+    init.qcom.sdio \
     init.qcom.sensors \
+    init.qti.cplicense \
+    init.qti.kernel.debug-pitti \
+    init.qti.kernel.debug \
+    init.qti.kernel.early_debug-pitti \
+    init.qti.kernel.early_debug \
     init.qti.kernel \
+    init.qti.media \
+    init.qti.qcv \
     init.qti.write \
     irsc_util \
     ks \
@@ -1914,6 +1896,7 @@ PRODUCT_PACKAGES += \
     port-bridge \
     power_off_alarm \
     ppd \
+    qca6234-service \
     qcc-vendor \
     qcom-system-daemon \
     qconfigfunctest \
@@ -1935,6 +1918,9 @@ PRODUCT_PACKAGES += \
     ssgqmigd \
     ssgqmigd64 \
     ssgtzd \
+    ssr_diag \
+    ssr_setup \
+    subsystem_ramdump \
     system_dlkm_modprobe \
     tftp_server \
     time_daemon \
@@ -1948,13 +1934,14 @@ PRODUCT_PACKAGES += \
     wifidisplayhalservice \
     xtra-daemon \
     xtwifi-client \
-    qccsyshal@1.2-service \
+    qccsyshal_aidl-service \
     wfdservice64 \
     mlipayd
 
 PRODUCT_PACKAGES += \
     system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so \
     system_ext_priv-app_ims_lib_arm64_libimsmedia_jni_so \
+    system_ext_priv-app_WfdService_lib_arm64_libwfdnative_so \
     vendor_lib64_libEGL_adreno_so \
     vendor_lib64_libGLESv2_adreno_so \
     vendor_lib64_libq3dtools_adreno_so
