@@ -187,6 +187,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/warm/proprietary/product/etc/permissions/UimService.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimService.xml \
     vendor/xiaomi/warm/proprietary/product/etc/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml \
     vendor/xiaomi/warm/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
+    vendor/xiaomi/warm/proprietary/system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc \
     vendor/xiaomi/warm/proprietary/system_ext/etc/init/vendor.qti.qccsyshal_aidl-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.qti.qccsyshal_aidl-service.rc \
     vendor/xiaomi/warm/proprietary/system_ext/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/wfdservice.rc \
     vendor/xiaomi/warm/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
@@ -1654,6 +1655,7 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.fingerprintextension-V1-ndk \
     vendor.xiaomi.hardware.fx.tunnel-V1-ndk \
     vendor.xiaomi.hardware.mlipay-V1-ndk_platform \
+    vendor.xiaomi.hardware.seccam-V1-ndk \
     vendor_lib_rfsa_adsp_libSnpeHtpV68Skel_so \
     vendor_lib_rfsa_adsp_libSnpeHtpV69Skel_so \
     vendor_lib_rfsa_adsp_libcalculator_skel_so \
@@ -1682,6 +1684,7 @@ PRODUCT_PACKAGES += \
     libmmrtpencoder \
     libqcc \
     libqcc_file_agent_sys \
+    libqccdme \
     libqccfileservice \
     libqesdk_ndk_platform.qti \
     libwfdavenhancements \
@@ -1705,6 +1708,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.diaghal@1.0 \
     vendor.qti.hardware.qccsyshal@1.0 \
     vendor.qti.hardware.qccsyshal@1.1 \
+    vendor.qti.hardware.qccsyshal@1.2-halimpl \
     vendor.qti.hardware.qccsyshal@1.2 \
     vendor.qti.hardware.qccvndhal@1.0 \
     vendor.qti.hardware.seccam@1.0 \
@@ -1934,6 +1938,7 @@ PRODUCT_PACKAGES += \
     wifidisplayhalservice \
     xtra-daemon \
     xtwifi-client \
+    qccsyshal@1.2-service \
     qccsyshal_aidl-service \
     wfdservice64 \
     mlipayd
