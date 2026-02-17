@@ -662,7 +662,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/warm/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     vendor/xiaomi/warm/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
     vendor/xiaomi/warm/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
-    vendor/xiaomi/warm/proprietary/vendor/etc/init/vendor.silead.hardware.fingerprintext-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.silead.hardware.fingerprintext-service.rc \
     vendor/xiaomi/warm/proprietary/vendor/etc/init/vendor.xiaomi.hardware.displayfeature_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.displayfeature_aidl-service.rc \
     vendor/xiaomi/warm/proprietary/vendor/etc/init/wfdvndservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wfdvndservice.rc \
     vendor/xiaomi/warm/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
@@ -1036,7 +1035,6 @@ PRODUCT_PACKAGES += \
     camera.qcom \
     com.qti.chi.override \
     fingerprint.goodix.default \
-    fingerprint.silead.default \
     gralloc.default \
     libEseUtils \
     libqtigatekeeper \
@@ -1251,7 +1249,6 @@ PRODUCT_PACKAGES += \
     libmialgoengine \
     libmialgoengine2 \
     libmiface \
-    libmifpext \
     libminkdescriptor \
     libminksocket_vendor \
     libmiracast \
@@ -1398,7 +1395,6 @@ PRODUCT_PACKAGES += \
     libshsc \
     libsi \
     libskewknob \
-    libsl_fp_impl \
     libslimclient \
     libsmemlog \
     libsnapdragoncolor-manager \
@@ -1548,7 +1544,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.dpmservice@1.0 \
     vendor.qti.hardware.dpmservice@1.1 \
     vendor.qti.hardware.dsp@1.0 \
-    vendor.qti.hardware.fingerprint@1.0 \
     vendor.qti.hardware.fm@1.0 \
     vendor.qti.hardware.mwqemadapter@1.0 \
     vendor.qti.hardware.mwqemadapteraidlservice-V1-ndk \
@@ -1649,7 +1644,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.qspmhal@1.0 \
     vendor.qti.voiceprint@1.0 \
     vendor.xiaomi.hardware.displayfeature_aidl-V2-ndk \
-    vendor.xiaomi.hardware.fingerprintextension-V1-ndk \
     vendor.xiaomi.hardware.fx.tunnel-V1-ndk \
     vendor.xiaomi.hardware.mlipay-V1-ndk_platform \
     vendor.xiaomi.hardware.seccam-V1-ndk \
@@ -1849,7 +1843,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.trustedui-aidl-service-qti \
     vendor.qti.media.c2@1.0-service \
     vendor.qti.media.c2audio@1.0-service \
-    vendor.silead.hardware.fingerprintext-service \
     vendor.xiaomi.hardware.displayfeature_aidl-service \
     ims-dataservice-daemon \
     ims_rtp_daemon \
