@@ -187,10 +187,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/warm/proprietary/product/etc/permissions/UimService.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimService.xml \
     vendor/xiaomi/warm/proprietary/product/etc/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml \
     vendor/xiaomi/warm/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
-    vendor/xiaomi/warm/proprietary/system_ext/etc/init/vendor.qti.qccsyshal_aidl-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.qti.qccsyshal_aidl-service.rc \
     vendor/xiaomi/warm/proprietary/system_ext/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/wfdservice.rc \
     vendor/xiaomi/warm/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
-    vendor/xiaomi/warm/proprietary/system_ext/etc/permissions/com.qti.qcc.vendor_qcc.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.qcc.vendor_qcc.xml \
     vendor/xiaomi/warm/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
     vendor/xiaomi/warm/proprietary/system_ext/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_permissions.xml \
     vendor/xiaomi/warm/proprietary/system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml \
@@ -664,7 +662,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/warm/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     vendor/xiaomi/warm/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
     vendor/xiaomi/warm/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
-    vendor/xiaomi/warm/proprietary/vendor/etc/init/vendor.silead.hardware.fingerprintext-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.silead.hardware.fingerprintext-service.rc \
     vendor/xiaomi/warm/proprietary/vendor/etc/init/vendor.xiaomi.hardware.displayfeature_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.displayfeature_aidl-service.rc \
     vendor/xiaomi/warm/proprietary/vendor/etc/init/wfdvndservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wfdvndservice.rc \
     vendor/xiaomi/warm/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
@@ -1034,11 +1031,9 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.bluetooth@1.1-impl-qti \
     android.hardware.gnss-aidl-impl-qti \
-    audio.bluetooth_qti.default \
     camera.qcom \
     com.qti.chi.override \
     fingerprint.goodix.default \
-    fingerprint.silead.default \
     gralloc.default \
     libEseUtils \
     libqtigatekeeper \
@@ -1110,7 +1105,6 @@ PRODUCT_PACKAGES += \
     libbluetooth_audio_session_aidl_qti \
     libbluetooth_audio_session_qti \
     libbluetooth_audio_session_qti_2_1 \
-    libbt-hidlclient \
     libbtnv \
     libc++_shared \
     libcacertclient \
@@ -1253,7 +1247,6 @@ PRODUCT_PACKAGES += \
     libmialgoengine \
     libmialgoengine2 \
     libmiface \
-    libmifpext \
     libminkdescriptor \
     libminksocket_vendor \
     libmiracast \
@@ -1400,7 +1393,6 @@ PRODUCT_PACKAGES += \
     libshsc \
     libsi \
     libskewknob \
-    libsl_fp_impl \
     libslimclient \
     libsmemlog \
     libsnapdragoncolor-manager \
@@ -1550,14 +1542,13 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.dpmservice@1.0 \
     vendor.qti.hardware.dpmservice@1.1 \
     vendor.qti.hardware.dsp@1.0 \
-    vendor.qti.hardware.fingerprint@1.0 \
     vendor.qti.hardware.fm@1.0 \
     vendor.qti.hardware.mwqemadapter@1.0 \
     vendor.qti.hardware.mwqemadapteraidlservice-V1-ndk \
     vendor.qti.hardware.perf2-V1-ndk \
-    vendor.qti.hardware.qccsyshal@1.0_vendor \
-    vendor.qti.hardware.qccsyshal@1.1_vendor \
-    vendor.qti.hardware.qccsyshal@1.2_vendor \
+    vendor.qti.hardware.qccsyshal@1.0 \
+    vendor.qti.hardware.qccsyshal@1.1 \
+    vendor.qti.hardware.qccsyshal@1.2 \
     vendor.qti.hardware.qconfig-V1-ndk \
     vendor.qti.hardware.qdutils_disp@1.0 \
     vendor.qti.hardware.qseecom-V1-ndk \
@@ -1638,7 +1629,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.memory.pasrmanager-V1-ndk \
     vendor.qti.memory.pasrmanager@1.0 \
     vendor.qti.memory.pasrmanager@1.1 \
-    vendor.qti.qccvndhal_aidl-V1-ndk_vendor \
+    vendor.qti.qccvndhal_aidl-V1-ndk \
     vendor.qti.qccvndhal_aidl-halimpl \
     vendor.qti.qesdhal@1.0 \
     vendor.qti.qesdhal@1.1 \
@@ -1651,9 +1642,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.qspmhal@1.0 \
     vendor.qti.voiceprint@1.0 \
     vendor.xiaomi.hardware.displayfeature_aidl-V2-ndk \
-    vendor.xiaomi.hardware.fingerprintextension-V1-ndk \
     vendor.xiaomi.hardware.fx.tunnel-V1-ndk \
     vendor.xiaomi.hardware.mlipay-V1-ndk_platform \
+    vendor.xiaomi.hardware.seccam-V1-ndk \
     vendor_lib_rfsa_adsp_libSnpeHtpV68Skel_so \
     vendor_lib_rfsa_adsp_libSnpeHtpV69Skel_so \
     vendor_lib_rfsa_adsp_libcalculator_skel_so \
@@ -1680,9 +1671,6 @@ PRODUCT_PACKAGES += \
     libmmparser_lite \
     libmmrtpdecoder \
     libmmrtpencoder \
-    libqcc \
-    libqcc_file_agent_sys \
-    libqccfileservice \
     libqesdk_ndk_platform.qti \
     libwfdavenhancements \
     libwfdclient \
@@ -1703,18 +1691,11 @@ PRODUCT_PACKAGES += \
     libwfduibcsrcinterface \
     vendor.qti.ImsRtpService-V1-ndk \
     vendor.qti.diaghal@1.0 \
-    vendor.qti.hardware.qccsyshal@1.0 \
-    vendor.qti.hardware.qccsyshal@1.1 \
-    vendor.qti.hardware.qccsyshal@1.2 \
-    vendor.qti.hardware.qccvndhal@1.0 \
     vendor.qti.hardware.seccam@1.0 \
     vendor.qti.hardware.wifidisplaysession@1.0 \
     vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk \
     vendor.qti.imsrtpservice@3.0 \
     vendor.qti.imsrtpservice@3.1 \
-    vendor.qti.qccsyshal_aidl-V1-ndk \
-    vendor.qti.qccsyshal_aidl-halimpl \
-    vendor.qti.qccvndhal_aidl-V1-ndk \
     vendor.qti.qesdhalaidl-V2-ndk \
     vendor.xiaomi.hardware.display.mihwcextension-V1-ndk \
     displayfeature.default \
@@ -1753,7 +1734,6 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentYGoogleHEXAGON_WIDEBAND \
     AtFwd2 \
     ImsRcsService \
-    QCC \
     QesdkSysService \
     QtiTelephonyService \
     QtiTelephony \
@@ -1829,7 +1809,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.qccvndhal_aidl-service.xml \
     vendor.qti.qspmhal-service.xml \
     vendor.xiaomi.hardware.displayfeature_aidl-service.xml \
-    vendor.qti.qccsyshal_aidl-service.xml \
     vendor.qti.qesdsys.service.xml \
     manifest_vendor.xiaomi.hardware.mlipay.xml \
     ATFWD-daemon \
@@ -1862,7 +1841,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.trustedui-aidl-service-qti \
     vendor.qti.media.c2@1.0-service \
     vendor.qti.media.c2audio@1.0-service \
-    vendor.silead.hardware.fingerprintext-service \
     vendor.xiaomi.hardware.displayfeature_aidl-service \
     ims-dataservice-daemon \
     ims_rtp_daemon \
@@ -1934,7 +1912,6 @@ PRODUCT_PACKAGES += \
     wifidisplayhalservice \
     xtra-daemon \
     xtwifi-client \
-    qccsyshal_aidl-service \
     wfdservice64 \
     mlipayd
 
